@@ -1,0 +1,46 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, INFO_URL } from '../consts';
+import HeadPicture from '../components/HeadPicture.astro';
+import Content from '../components/Content.astro';
+import { GiBookshelf } from "react-icons/gi";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main class="pt-[56px]">
+        <HeadPicture />
+        <h1 class="text-center">Assortment of Paraphernalia</h1>
+        <Content>
+        <section>
+        <div class="text-4xl indent-52 font-extrabold">     
+       klungo website 
+        </div>
+        <br >
+        <p class="text-center">      
+       In Korea, heart surgeon. Number one. Steady hand. One day, Kim Jong Un need new heart. I do operation. But mistake! Kim Jong Un die! SSD very mad! I hide fishing boat, come to America. No English, no food, no money. Darryl give me job. Now I have house, American car and new woman. Darryl save life.
+
+My big secret. I kill Kim Jong Un on purpose. I good surgeon. The best!
+       </p>
+       <br >
+    <div style="text-align:center">
+       <a
+       class="items-center text-orange-500" 
+       href={INFO_URL}>
+       Click this for a cool fact 
+       <GiBookshelf className="inline"/>
+       </a>
+    </div>
+        </section>
+        </Content>
+		</main>
+		<Footer />
+	</body>
+</html>
