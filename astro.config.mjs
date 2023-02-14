@@ -12,7 +12,7 @@ import tailwind from "@astrojs/tailwind";
 import image from "@astrojs/image";
 
 // https://astro.build/config
-import netlify from "@astrojs/netlify/edge-functions";
+import netlify from "@astrojs/netlify/functions";
 
 // https://astro.build/config
 export default defineConfig({
